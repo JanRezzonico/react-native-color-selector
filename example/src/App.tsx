@@ -1,18 +1,14 @@
 import * as React from 'react';
+import { useState } from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-color-selector';
+import { StyleSheet, View } from 'react-native';
+import { ColorSelector } from 'react-native-color-selector';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  const [color, setColor] = useState('#ffff00');
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <ColorSelector color={color} setColor={setColor} randomStart={true} />
     </View>
   );
 }

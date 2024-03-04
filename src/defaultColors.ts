@@ -1,0 +1,27 @@
+export default [
+  '#FFB6C1', // LightPink
+  '#FFC0CB', // Pink
+  '#FFD700', // Gold
+  '#FF6347', // Tomato
+  '#FF4500', // OrangeRed
+  '#FF8C00', // DarkOrange
+  '#FFA07A', // LightSalmon
+  '#FFDAB9', // PeachPuff
+  '#FF69B4', // HotPink
+  '#FF1493', // DeepPink
+  '#FF00FF', // Magenta
+  '#DA70D6', // Orchid
+  '#DDA0DD', // Plum
+  '#8A2BE2', // BlueViolet
+  '#4169E1', // RoyalBlue
+  '#00BFFF', // DeepSkyBlue
+  '#00CED1', // DarkTurquoise
+  '#20B2AA', // LightSeaGreen
+  '#7FFF00', // Chartreuse
+  '#32CD32', // LimeGreen
+  '#228B22', // ForestGreen
+  '#ADFF2F', // GreenYellow
+  '#FFD700', // Gold
+  '#FFA500', // Orange
+  '#8B0000', // DarkRed
+];
