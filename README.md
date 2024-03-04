@@ -11,11 +11,10 @@ npm install react-native-color-selector
 ## Usage
 
 ```js
-import { multiply } from 'react-native-color-selector';
+import { ColorSelector } from 'react-native-color-selector';
 
-// ...
-
-const result = await multiply(3, 7);
+const [color, setColor] = useState('#000000');
+<ColorSelector color={color} setColor={setColor} />
 ```
 
 ## Contributing
