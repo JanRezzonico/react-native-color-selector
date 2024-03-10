@@ -31,11 +31,10 @@ interface ColorButtonProps {
   color: string;
   onPress: (event: GestureResponderEvent) => void;
   props?: ViewProps;
-  key: string;
 }
 const ColorButton = ({ color, onPress, props }: ColorButtonProps) => {
   return (
-    <Pressable onPress={onPress}>
+    <Pressable onPress={onPress} style={styles.openPressable}>
       <View
         {...props}
         style={[
@@ -137,7 +136,7 @@ const styles = StyleSheet.create({
   previewView: {
     height: buttonSize,
     maxHeight: buttonSize,
-    width: '50%',
+    width: buttonSize * 5,
     margin: 10,
     borderRadius: buttonSize,
     alignSelf: 'center',
@@ -166,5 +165,8 @@ const styles = StyleSheet.create({
     height: buttonSize,
     maxWidth: buttonSize,
     maxHeight: buttonSize,
+  },
+  openPressable: {
+    flexShrink: 1,
   },
 });
