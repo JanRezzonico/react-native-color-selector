@@ -33,9 +33,9 @@ interface ColorButtonProps {
   props?: ViewProps;
   key: string;
 }
-const ColorButton = ({ color, onPress, props, key }: ColorButtonProps) => {
+const ColorButton = ({ color, onPress, props }: ColorButtonProps) => {
   return (
-    <Pressable key={key} onPress={onPress}>
+    <Pressable onPress={onPress}>
       <View
         {...props}
         style={[
